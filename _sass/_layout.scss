@@ -109,6 +109,7 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    color: $grey-color;
 }
 
 .contact-list,
@@ -165,7 +166,6 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
 
 
 /**
@@ -244,3 +244,6 @@
         }
     }
 }
+
+@include sticky-footer(150px, '#page-content', '#content-wrapper', '#site-footer');
+
